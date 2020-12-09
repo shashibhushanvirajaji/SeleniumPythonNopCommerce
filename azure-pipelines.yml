@@ -25,5 +25,7 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
+    pip install selenium
+    pip install webdriver-manager
     pytest -v -s -m "sanity" tests --browser chrome
   displayName: 'Test with pytest'
